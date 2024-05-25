@@ -171,8 +171,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BodegasController.cs" />
+    <Compile Include="Controllers\DetallefacturaController.cs" />
+    <Compile Include="Controllers\DetallestarjetasController.cs" />
+    <Compile Include="Controllers\FacturasController.cs" />
+    <Compile Include="Controllers\FormapagoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PersonasController.cs" />
+    <Compile Include="Controllers\PlatoController.cs" />
     <Compile Include="Controllers\RolsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -242,6 +249,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagenes\companyiamn.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -315,9 +323,40 @@
     <Content Include="Views\Rols\Details.cshtml" />
     <Content Include="Views\Rols\Edit.cshtml" />
     <Content Include="Views\Rols\Index.cshtml" />
+    <Content Include="Views\Personas\Create.cshtml" />
+    <Content Include="Views\Personas\Delete.cshtml" />
+    <Content Include="Views\Personas\Details.cshtml" />
+    <Content Include="Views\Personas\Edit.cshtml" />
+    <Content Include="Views\Personas\Index.cshtml" />
+    <Content Include="Views\Facturas\Create.cshtml" />
+    <Content Include="Views\Facturas\Delete.cshtml" />
+    <Content Include="Views\Facturas\Details.cshtml" />
+    <Content Include="Views\Facturas\Edit.cshtml" />
+    <Content Include="Views\Facturas\Index.cshtml" />
+    <Content Include="Views\Bodegas\Create.cshtml" />
+    <Content Include="Views\Bodegas\Delete.cshtml" />
+    <Content Include="Views\Bodegas\Details.cshtml" />
+    <Content Include="Views\Bodegas\Edit.cshtml" />
+    <Content Include="Views\Bodegas\Index.cshtml" />
+    <Content Include="Views\Formapago\Create.cshtml" />
+    <Content Include="Views\Formapago\Delete.cshtml" />
+    <Content Include="Views\Formapago\Details.cshtml" />
+    <Content Include="Views\Formapago\Edit.cshtml" />
+    <Content Include="Views\Formapago\Index.cshtml" />
+    <Content Include="Views\Detallestarjetas\Create.cshtml" />
+    <Content Include="Views\Detallestarjetas\Delete.cshtml" />
+    <Content Include="Views\Detallestarjetas\Details.cshtml" />
+    <Content Include="Views\Detallestarjetas\Edit.cshtml" />
+    <Content Include="Views\Detallestarjetas\Index.cshtml" />
+    <Content Include="Views\Detallefactura\Create.cshtml" />
+    <Content Include="Views\Detallefactura\Delete.cshtml" />
+    <Content Include="Views\Detallefactura\Details.cshtml" />
+    <Content Include="Views\Detallefactura\Edit.cshtml" />
+    <Content Include="Views\Detallefactura\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Plato\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
