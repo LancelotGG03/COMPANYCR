@@ -9,8 +9,8 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
+<table style="font-family:Arial; font-size:medium" class="table">
+    <tr style=" background-color:black; color:darkgrey; border:white solid 5px" class="header-table">
         <th>
             @Html.DisplayNameFor(model => model.Cantidad)
         </th>
@@ -21,25 +21,29 @@
             @Html.DisplayNameFor(model => model.CodigoPlato)
         </th>
         <th></th>
-    </tr>
+        </>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cantidad)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Valor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CodigoPlato)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Codigo }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Codigo }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Codigo })
-        </td>
-    </tr>
-}
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoPlato)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Codigo }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Codigo }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Codigo })
+            </td>
+        </tr>
+    }
 
-</table>
+    </table>
+    <div id="imagenCompany" style="text-align:center">
+        <img src="~/Imagenes/companyiamn.jpg" ; width="400" height="400" />
+    </div>

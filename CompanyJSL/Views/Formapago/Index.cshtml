@@ -9,8 +9,8 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
+<table style="font-family:Arial; font-size:medium" class="table">
+    <tr style=" background-color:black; color:darkgrey; border:white solid 5px" class="header-table">
         <th>
             @Html.DisplayNameFor(model => model.Efectivo)
         </th>
@@ -23,23 +23,27 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Efectivo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Tarjeta)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Número_de_tarjeta)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Numerodepago }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Numerodepago }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Numerodepago })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Efectivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tarjeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Número_de_tarjeta)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Numerodepago }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Numerodepago }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Numerodepago })
+            </td>
+        </tr>
+    }
 
 </table>
+<div id="imagenCompany" style="text-align:center">
+    <img src="~/Imagenes/companyiamn.jpg" ; width="400" height="400" />
+</div>
