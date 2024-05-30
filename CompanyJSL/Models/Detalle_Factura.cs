@@ -14,9 +14,9 @@ namespace CompanyJSL.Models
     
     public partial class Detalle_Factura
     {
-        public int Codigo { get; set; }
+        public int Código { get; set; }
         public int Cantidad { get; set; }
-        public int Valor { get; set; }
-        public Nullable<int> CodigoPlato { get; set; }
+        public string Valor { get; set; }
+        public int Códigoplato { get; set; }
     }
 }

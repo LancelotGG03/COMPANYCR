@@ -14,9 +14,9 @@ namespace CompanyJSL.Models
     
     public partial class Plato
     {
-        public int Codigoplato { get; set; }
+        public int Códigoplato { get; set; }
         public string Nombre { get; set; }
         public string Ingredientes { get; set; }
-        public int Valor { get; set; }
+        public string Valor { get; set; }
     }
 }

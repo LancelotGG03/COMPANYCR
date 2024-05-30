@@ -12,7 +12,8 @@ namespace CompanyJSL.Controllers
 {
     public class PersonasController : Controller
     {
-        private Company_JLS_nuevaEntities db = new Company_JLS_nuevaEntities();
+        private Company_JLS_nuevaEntities1 db = new Company_JLS_nuevaEntities1
+            ();
 
         // GET: Personas
         public ActionResult Index()

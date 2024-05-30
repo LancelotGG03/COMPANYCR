@@ -184,6 +184,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="menuespañol.aspx.cs">
+      <DependentUpon>menuespañol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuespañol.aspx.designer.cs">
+      <DependentUpon>menuespañol.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Bodega.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -230,6 +237,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Bootn.min.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -251,8 +259,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagenes\1606754177821.jpg" />
+    <Content Include="Imagenes\Blog-Pari-Fermier-1.jpg" />
     <Content Include="Imagenes\companyiamn.jpg" />
     <Content Include="Imagenes\companyiamn2.jpg" />
+    <Content Include="Imagenes\Gazpacho_Cazuela_Barro.jpg" />
+    <Content Include="Imagenes\paella_valenciana.jpg" />
+    <Content Include="Imagenes\ratatouille-recien-horneada.jpg" />
+    <Content Include="Imagenes\Vichyssoise-FT-RECIPE0822-2000-e9c4c43cd9464a88a15e2e07b5d39ec4.jpg" />
+    <Content Include="menuespañol.aspx" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -359,6 +374,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\menuespañol\" />
     <Folder Include="Views\Plato\" />
   </ItemGroup>
   <ItemGroup>

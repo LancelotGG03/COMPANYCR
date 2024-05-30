@@ -14,15 +14,15 @@ namespace CompanyJSL.Models
     
     public partial class Persona
     {
-        public long idPersona { get; set; }
+        public int idPersona { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Tipo_de_documento { get; set; }
         public string Correo { get; set; }
-        public long Telefono { get; set; }
+        public int Telefono { get; set; }
         public string Dirección { get; set; }
         public string Tipo_de_rol { get; set; }
-        public Nullable<int> IdRol { get; set; }
-        public Nullable<int> Código_de_facturas { get; set; }
+        public int IdRol { get; set; }
+        public int Código_de_facturas { get; set; }
     }
 }

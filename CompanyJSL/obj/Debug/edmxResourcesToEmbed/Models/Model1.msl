@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Company_JLS_nuevaEntities">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Company_JLS_nuevaEntities1">
     <EntitySetMapping Name="Bodega">
       <EntityTypeMapping TypeName="Model.Bodega">
         <MappingFragment StoreEntitySet="Bodega">
@@ -17,10 +17,10 @@
     <EntitySetMapping Name="Detalle_Factura">
       <EntityTypeMapping TypeName="Model.Detalle_Factura">
         <MappingFragment StoreEntitySet="Detalle Factura">
-          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Código" ColumnName="Código" />
           <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
           <ScalarProperty Name="Valor" ColumnName="Valor" />
-          <ScalarProperty Name="CodigoPlato" ColumnName="CodigoPlato" />
+          <ScalarProperty Name="Códigoplato" ColumnName="Códigoplato" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -74,7 +74,7 @@
     <EntitySetMapping Name="Plato">
       <EntityTypeMapping TypeName="Model.Plato">
         <MappingFragment StoreEntitySet="Plato">
-          <ScalarProperty Name="Codigoplato" ColumnName="Codigoplato" />
+          <ScalarProperty Name="Códigoplato" ColumnName="Códigoplato" />
           <ScalarProperty Name="Nombre" ColumnName="Nombre" />
           <ScalarProperty Name="Ingredientes" ColumnName="Ingredientes" />
           <ScalarProperty Name="Valor" ColumnName="Valor" />

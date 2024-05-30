@@ -14,7 +14,7 @@ namespace CompanyJSL.Models
     
     public partial class Detalles_tarjetas
     {
-        public long Número_de_tarjeta { get; set; }
+        public int Número_de_tarjeta { get; set; }
         public string Nombre_Titular { get; set; }
         public System.DateTime Fecha_de_vencimiento { get; set; }
         public int CVV { get; set; }

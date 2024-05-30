@@ -14,10 +14,10 @@ namespace CompanyJSL.Models
     
     public partial class Facturas
     {
-        public long Código_de_facturas { get; set; }
+        public int Código_de_facturas { get; set; }
         public System.DateTime Fecha { get; set; }
-        public Nullable<long> Código { get; set; }
-        public Nullable<long> idProducto { get; set; }
-        public Nullable<int> Numerodepago { get; set; }
+        public int Código { get; set; }
+        public int idProducto { get; set; }
+        public int Numerodepago { get; set; }
     }
 }

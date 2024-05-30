@@ -19,18 +19,18 @@
         </EntityType>
         <EntityType Name="Detalle Factura">
           <Key>
-            <PropertyRef Name="Codigo" />
+            <PropertyRef Name="Código" />
           </Key>
-          <Property Name="Codigo" Type="int" Nullable="false" />
+          <Property Name="Código" Type="int" Nullable="false" />
           <Property Name="Cantidad" Type="int" Nullable="false" />
-          <Property Name="Valor" Type="int" Nullable="false" />
-          <Property Name="CodigoPlato" Type="int" />
+          <Property Name="Valor" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Códigoplato" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Detalles tarjetas">
           <Key>
             <PropertyRef Name="Número de tarjeta" />
           </Key>
-          <Property Name="Número de tarjeta" Type="bigint" Nullable="false" />
+          <Property Name="Número de tarjeta" Type="int" Nullable="false" />
           <Property Name="Nombre Titular" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Fecha de vencimiento" Type="date" Nullable="false" />
           <Property Name="CVV" Type="int" Nullable="false" />
@@ -39,11 +39,11 @@
           <Key>
             <PropertyRef Name="Código de facturas" />
           </Key>
-          <Property Name="Código de facturas" Type="bigint" Nullable="false" />
+          <Property Name="Código de facturas" Type="int" Nullable="false" />
           <Property Name="Fecha" Type="date" Nullable="false" />
-          <Property Name="Código" Type="bigint" />
-          <Property Name="idProducto" Type="bigint" />
-          <Property Name="Numerodepago" Type="int" />
+          <Property Name="Código" Type="int" Nullable="false" />
+          <Property Name="idProducto" Type="int" Nullable="false" />
+          <Property Name="Numerodepago" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Forma de pago">
           <Key>
@@ -52,31 +52,31 @@
           <Property Name="Numerodepago" Type="int" Nullable="false" />
           <Property Name="Efectivo" Type="varchar" MaxLength="50" />
           <Property Name="Tarjeta" Type="varchar" MaxLength="50" />
-          <Property Name="Número de tarjeta" Type="int" />
+          <Property Name="Número de tarjeta" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Persona">
           <Key>
             <PropertyRef Name="idPersona" />
           </Key>
-          <Property Name="idPersona" Type="bigint" Nullable="false" />
+          <Property Name="idPersona" Type="int" Nullable="false" />
           <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Apellido" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Tipo de documento" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Correo" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Telefono" Type="bigint" Nullable="false" />
+          <Property Name="Telefono" Type="int" Nullable="false" />
           <Property Name="Dirección" Type="nvarchar" MaxLength="50" />
           <Property Name="Tipo de rol" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="IdRol" Type="int" />
-          <Property Name="Código de facturas" Type="int" />
+          <Property Name="IdRol" Type="int" Nullable="false" />
+          <Property Name="Código de facturas" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Plato">
           <Key>
-            <PropertyRef Name="Codigoplato" />
+            <PropertyRef Name="Códigoplato" />
           </Key>
-          <Property Name="Codigoplato" Type="int" Nullable="false" />
-          <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Códigoplato" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Ingredientes" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Valor" Type="int" Nullable="false" />
+          <Property Name="Valor" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Rol">
           <Key>
@@ -115,18 +115,18 @@
         </EntityType>
         <EntityType Name="Detalle_Factura">
           <Key>
-            <PropertyRef Name="Codigo" />
+            <PropertyRef Name="Código" />
           </Key>
-          <Property Name="Codigo" Type="Int32" Nullable="false" />
+          <Property Name="Código" Type="Int32" Nullable="false" />
           <Property Name="Cantidad" Type="Int32" Nullable="false" />
-          <Property Name="Valor" Type="Int32" Nullable="false" />
-          <Property Name="CodigoPlato" Type="Int32" />
+          <Property Name="Valor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Códigoplato" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Detalles_tarjetas">
           <Key>
             <PropertyRef Name="Número_de_tarjeta" />
           </Key>
-          <Property Name="Número_de_tarjeta" Type="Int64" Nullable="false" />
+          <Property Name="Número_de_tarjeta" Type="Int32" Nullable="false" />
           <Property Name="Nombre_Titular" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Fecha_de_vencimiento" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="CVV" Type="Int32" Nullable="false" />
@@ -135,11 +135,11 @@
           <Key>
             <PropertyRef Name="Código_de_facturas" />
           </Key>
-          <Property Name="Código_de_facturas" Type="Int64" Nullable="false" />
+          <Property Name="Código_de_facturas" Type="Int32" Nullable="false" />
           <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="Código" Type="Int64" />
-          <Property Name="idProducto" Type="Int64" />
-          <Property Name="Numerodepago" Type="Int32" />
+          <Property Name="Código" Type="Int32" Nullable="false" />
+          <Property Name="idProducto" Type="Int32" Nullable="false" />
+          <Property Name="Numerodepago" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Forma_de_pago">
           <Key>
@@ -148,31 +148,31 @@
           <Property Name="Numerodepago" Type="Int32" Nullable="false" />
           <Property Name="Efectivo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Tarjeta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Número_de_tarjeta" Type="Int32" />
+          <Property Name="Número_de_tarjeta" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Persona">
           <Key>
             <PropertyRef Name="idPersona" />
           </Key>
-          <Property Name="idPersona" Type="Int64" Nullable="false" />
+          <Property Name="idPersona" Type="Int32" Nullable="false" />
           <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Tipo_de_documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Telefono" Type="Int64" Nullable="false" />
+          <Property Name="Telefono" Type="Int32" Nullable="false" />
           <Property Name="Dirección" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Tipo_de_rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="IdRol" Type="Int32" />
-          <Property Name="Código_de_facturas" Type="Int32" />
+          <Property Name="IdRol" Type="Int32" Nullable="false" />
+          <Property Name="Código_de_facturas" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Plato">
           <Key>
-            <PropertyRef Name="Codigoplato" />
+            <PropertyRef Name="Códigoplato" />
           </Key>
-          <Property Name="Codigoplato" Type="Int32" Nullable="false" />
-          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Códigoplato" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Ingredientes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Valor" Type="Int32" Nullable="false" />
+          <Property Name="Valor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityType Name="Rol">
           <Key>
@@ -182,7 +182,7 @@
           <Property Name="Nombre_Rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Descripción" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="Company_JLS_nuevaEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Company_JLS_nuevaEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Bodega" EntityType="Self.Bodega" />
           <EntitySet Name="Detalle_Factura" EntityType="Self.Detalle_Factura" />
           <EntitySet Name="Detalles_tarjetas" EntityType="Self.Detalles_tarjetas" />
@@ -197,7 +197,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Company_JLS_nuevaEntities">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Company_JLS_nuevaEntities1">
           <EntitySetMapping Name="Bodega">
             <EntityTypeMapping TypeName="Model.Bodega">
               <MappingFragment StoreEntitySet="Bodega">
@@ -214,10 +214,10 @@
           <EntitySetMapping Name="Detalle_Factura">
             <EntityTypeMapping TypeName="Model.Detalle_Factura">
               <MappingFragment StoreEntitySet="Detalle Factura">
-                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="Código" ColumnName="Código" />
                 <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
                 <ScalarProperty Name="Valor" ColumnName="Valor" />
-                <ScalarProperty Name="CodigoPlato" ColumnName="CodigoPlato" />
+                <ScalarProperty Name="Códigoplato" ColumnName="Códigoplato" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -271,7 +271,7 @@
           <EntitySetMapping Name="Plato">
             <EntityTypeMapping TypeName="Model.Plato">
               <MappingFragment StoreEntitySet="Plato">
-                <ScalarProperty Name="Codigoplato" ColumnName="Codigoplato" />
+                <ScalarProperty Name="Códigoplato" ColumnName="Códigoplato" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
                 <ScalarProperty Name="Ingredientes" ColumnName="Ingredientes" />
                 <ScalarProperty Name="Valor" ColumnName="Valor" />

@@ -17,6 +17,6 @@ namespace CompanyJSL.Models
         public int Numerodepago { get; set; }
         public string Efectivo { get; set; }
         public string Tarjeta { get; set; }
-        public Nullable<int> Número_de_tarjeta { get; set; }
+        public int Número_de_tarjeta { get; set; }
     }
 }

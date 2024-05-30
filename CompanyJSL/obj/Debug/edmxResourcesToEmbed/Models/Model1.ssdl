@@ -14,18 +14,18 @@
   </EntityType>
   <EntityType Name="Detalle Factura">
     <Key>
-      <PropertyRef Name="Codigo" />
+      <PropertyRef Name="Código" />
     </Key>
-    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Código" Type="int" Nullable="false" />
     <Property Name="Cantidad" Type="int" Nullable="false" />
-    <Property Name="Valor" Type="int" Nullable="false" />
-    <Property Name="CodigoPlato" Type="int" />
+    <Property Name="Valor" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Códigoplato" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Detalles tarjetas">
     <Key>
       <PropertyRef Name="Número de tarjeta" />
     </Key>
-    <Property Name="Número de tarjeta" Type="bigint" Nullable="false" />
+    <Property Name="Número de tarjeta" Type="int" Nullable="false" />
     <Property Name="Nombre Titular" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Fecha de vencimiento" Type="date" Nullable="false" />
     <Property Name="CVV" Type="int" Nullable="false" />
@@ -34,11 +34,11 @@
     <Key>
       <PropertyRef Name="Código de facturas" />
     </Key>
-    <Property Name="Código de facturas" Type="bigint" Nullable="false" />
+    <Property Name="Código de facturas" Type="int" Nullable="false" />
     <Property Name="Fecha" Type="date" Nullable="false" />
-    <Property Name="Código" Type="bigint" />
-    <Property Name="idProducto" Type="bigint" />
-    <Property Name="Numerodepago" Type="int" />
+    <Property Name="Código" Type="int" Nullable="false" />
+    <Property Name="idProducto" Type="int" Nullable="false" />
+    <Property Name="Numerodepago" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Forma de pago">
     <Key>
@@ -47,31 +47,31 @@
     <Property Name="Numerodepago" Type="int" Nullable="false" />
     <Property Name="Efectivo" Type="varchar" MaxLength="50" />
     <Property Name="Tarjeta" Type="varchar" MaxLength="50" />
-    <Property Name="Número de tarjeta" Type="int" />
+    <Property Name="Número de tarjeta" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Persona">
     <Key>
       <PropertyRef Name="idPersona" />
     </Key>
-    <Property Name="idPersona" Type="bigint" Nullable="false" />
+    <Property Name="idPersona" Type="int" Nullable="false" />
     <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Apellido" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Tipo de documento" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Correo" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Telefono" Type="bigint" Nullable="false" />
+    <Property Name="Telefono" Type="int" Nullable="false" />
     <Property Name="Dirección" Type="nvarchar" MaxLength="50" />
     <Property Name="Tipo de rol" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="IdRol" Type="int" />
-    <Property Name="Código de facturas" Type="int" />
+    <Property Name="IdRol" Type="int" Nullable="false" />
+    <Property Name="Código de facturas" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Plato">
     <Key>
-      <PropertyRef Name="Codigoplato" />
+      <PropertyRef Name="Códigoplato" />
     </Key>
-    <Property Name="Codigoplato" Type="int" Nullable="false" />
-    <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Códigoplato" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Ingredientes" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Valor" Type="int" Nullable="false" />
+    <Property Name="Valor" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Rol">
     <Key>
