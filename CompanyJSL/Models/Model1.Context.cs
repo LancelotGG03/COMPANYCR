@@ -13,10 +13,10 @@ namespace CompanyJSL.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Company_JLS_nuevaEntities1 : DbContext
+    public partial class Company_JLS_nuevaEntities2 : DbContext
     {
-        public Company_JLS_nuevaEntities1()
-            : base("name=Company_JLS_nuevaEntities1")
+        public Company_JLS_nuevaEntities2()
+            : base("name=Company_JLS_nuevaEntities2")
         {
         }
     

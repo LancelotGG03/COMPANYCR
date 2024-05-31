@@ -81,7 +81,7 @@
     <Property Name="Nombre_Rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Descripción" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
-  <EntityContainer Name="Company_JLS_nuevaEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="Company_JLS_nuevaEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Bodega" EntityType="Self.Bodega" />
     <EntitySet Name="Detalle_Factura" EntityType="Self.Detalle_Factura" />
     <EntitySet Name="Detalles_tarjetas" EntityType="Self.Detalles_tarjetas" />

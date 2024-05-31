@@ -12,7 +12,7 @@ namespace CompanyJSL.Controllers
 {
     public class PlatoController : Controller
     {
-        private Company_JLS_nuevaEntities1 db = new Company_JLS_nuevaEntities1();
+        private Company_JLS_nuevaEntities2 db = new Company_JLS_nuevaEntities2();
 
         // GET: Plato
         public ActionResult Index()

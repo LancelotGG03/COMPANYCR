@@ -12,7 +12,7 @@ namespace CompanyJSL.Controllers
 {
     public class DetallefacturaController : Controller
     {
-        private Company_JLS_nuevaEntities1 db = new Company_JLS_nuevaEntities1();
+        private Company_JLS_nuevaEntities2 db = new Company_JLS_nuevaEntities2();
 
         // GET: Detallefactura
         public ActionResult Index()
